@@ -3,8 +3,9 @@
   "extends": [
     "config:recommended"
   ],
-  "regexManagers": [
+  "customManagers": [
     {
+      "customType": "regex",
       "fileMatch": ["statefulset.yaml"], 
       "matchStrings": [
         "image:\\s(?<depName>.*):(?<currentValue>\\d+\\.\\d+\\.\\d+)"
